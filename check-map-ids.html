@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>check-map-ids</title>
+  <link rel="icon" type="image/png" href="#">
+</head>
+<body>
+
+  <h1>check-map-ids</h1>
+
+<script type="module">
+
+import {checkMapIds} from './check-map-ids.js'
+
+
+let response = await fetch('world-map.svg')
+let xml = await response.text()
+let svg = await new DOMParser().parseFromString(xml, 'image/svg+xml')
+document.body.append(svg.documentElement)
+
+
+checkMapIds()
+</script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+{
+  "tasks": {
+    "update-data": "deno run --allow-read --allow-net --allow-write update-data.js",
+    "clean": "rm world-map.svg; rm countries.json",
+    "check-map-ids": "sh open check-map-ids.html"
+  }
+}
