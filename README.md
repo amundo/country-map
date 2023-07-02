@@ -1,9 +1,7 @@
 # README.md
 
+This data directory contains an SVG map and associated JSON data about the countries in the map.
 
-A basic clickable SVG political world map.
-
-Based on this SVG:
 
 <https://upload.wikimedia.org/wikipedia/commons/4/4d/BlankMap-World.svg>
 
